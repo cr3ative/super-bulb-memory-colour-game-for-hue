@@ -1,6 +1,10 @@
 <?php
 
-$bridge = '172.16.20.39';
+if (!isset($bridge)) {
+	$config = json_decode(file_get_contents("config.json"));
+	$bridge = $config->bridge;
+}
+
 $key = '601ce7da7ae943046e1c0f5ec9d34794';
 
 require('pest-master/PestJSON.php');
@@ -10,8 +14,9 @@ function register() {
 	global $bridge, $key;
 
 	$pest = new Pest("http://$bridge/api");
-	$data = json_encode(array('username' => 'abcd1234', 'devicetype' => 'Ray Solutions Scripts'));
+	$data = json_encode(array('username' => '601ce7da7ae943046e1c0f5ec9d34794', 'devicetype' => 'cr3'));
 	$result = $pest->post('', $data);
+	
 	return "$result\n";
 }
 

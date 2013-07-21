@@ -338,23 +338,26 @@ function flashred() {
 
 function doverdict() {
 
+	if (score < -6) {
+		$('#verdict').html("VERDICT: WHY NOT TAKE UP GOLF INSTEAD?");
+	}
 	if (score < 0) {
-		$('#verdict').html("VERDICT: COMPLETELY TERRIBLE");
+		$('#verdict').html("VERDICT: TRY AGAIN, STAY CALM!");
 	}
 	if (score > 0) {
-		$('#verdict').html("VERDICT: OH COME ON");
+		$('#verdict').html("VERDICT: YOU'VE GOT THE IDEA!");
 	}
 	if (score > 3) {
-		$('#verdict').html("VERDICT: NOT AWFUL");
+		$('#verdict').html("VERDICT: HEY, PRETTY GOOD!");
 	}
 	if (score > 6) {
-		$('#verdict').html("VERDICT: HALF DECENT");
+		$('#verdict').html("VERDICT: WOW! KEEP GOING!");
 	}
 	if (score > 9) {
-		$('#verdict').html("VERDICT: CRIKEY!");
+		$('#verdict').html("VERDICT: BLIMEY! YOU'RE AWESOME!");
 	}
 	if (score > 15) {
-		$('#verdict').html("VERDICT: ARE YOU A WIZARD");
+		$('#verdict').html("VERDICT: ARE YOU A WIZARD?!");
 	}
 	
 
