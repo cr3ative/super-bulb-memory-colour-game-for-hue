@@ -65,6 +65,8 @@ if (@$_GET['mode'] == "scan") {
 	  		
 	  		</div>
 	  		
+	  		<img src="lights-small/lost copy.png"/>
+	  		
 	  		</form>	  		
 	  		
 	</body>

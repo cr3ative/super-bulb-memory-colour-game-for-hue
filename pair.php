@@ -21,9 +21,9 @@ if (@$_GET['mode'] == "save") {
 	$status = fwrite($fh, json_encode(array("bridge"=>$bridge)));
 	fclose($fh);
 	if ($status) {
-		echo "Saved config!";
+		header("Location:index.html");
 	} else {
-		echo "Trouble writing :(";
+		echo "Trouble writing - check file permissions :(";
 	}
 	die();
 }
@@ -90,6 +90,7 @@ if (@$_GET['mode'] == "save") {
 		  							$('#bridges').html("Successfully paired to Bridge! Did Light 2 turn red?");
 		  							$('#save').show();
 		  							$('#cancel').show();
+		  							$('#break').show();
 		  						}
 		  						if (data == "FATAL") {
 		  							$('#bridges').html("Couldn't contact the Bridge :(");
@@ -102,11 +103,15 @@ if (@$_GET['mode'] == "save") {
 	  		
 	  		</div>
 	  		
-	  		<Br/><br/>
+	  		<Br/>
 	  		
 	  		<a id="save" style="display: none;" class="btn btn-large btn-success" href="pair.php?mode=save&bridge=<?php echo $_GET['bridge'];?>">Yes - Save Configuration!</a>
 	  		
 	  		<a id="cancel" style="display: none;" class="btn btn-large btn-warning" href="configure.php">No - Start Again</a>
+	  		
+	  		<div id="break" style="display:none; height:10px"></div>
+	  	
+	  		<img src="lights-small/lost copy.png"/>
 	  		
 	  		</form>	  		
 	  		
