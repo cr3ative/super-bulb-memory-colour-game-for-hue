@@ -1,0 +1,87 @@
+@keyframes blink {  
+    0% { color: white; }
+    100% { color: black; }
+}
+@-webkit-keyframes blink {
+    0% { color: white; }
+    100% { color: black; }
+}
+.bigbutt {
+	border-radius: 250px;
+	height: 340px;
+}
+.toprow {
+	padding: 30px;
+}
+.dosis {
+	font-family:'Dosis',sans-serif;
+}
+.blink {
+    -webkit-animation: blink 0.5s linear infinite;
+    -moz-animation: blink 0.5s linear infinite;
+    -ms-animation: blink 0.5s linear infinite;
+    -o-animation: blink 0.5s linear infinite;
+    animation: blink 0.5s linear infinite;
+} 
+.btn-large{
+	font-size: 2em;
+}
+#start {
+	position: absolute;
+	bottom: 140px;
+	left: 19%;
+	font-size: 7em;
+	z-index: 500;
+}
+#hilead {
+	position: absolute;
+	bottom: 163px;
+	left: 27%;
+	font-size: 7em;
+	z-index: 500;
+}
+#hisubmit {
+	position: absolute;
+	bottom: 109px;
+	left: 40%;
+	font-size: 2em;
+	z-index: 500;
+}
+.buttonrow {
+	position: absolute;
+	bottom: 30px;
+}
+#pink {
+	background-image: url(lights-small/pink.png);
+	background-size: 100%;
+}
+#blue {
+	background-image: url(lights-small/blue.png);
+	background-size: 100%;
+}
+#yellow {
+	background-image: url(lights-small/yellow.png);
+	background-size: 100%;
+}
+#red {
+	background-image: url(lights-small/red.png);
+	background-size: 100%;
+}
+#bulb1 {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+#bulb2 {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+#bulb3 {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+#debug {
+	padding-top: 10px;
+}

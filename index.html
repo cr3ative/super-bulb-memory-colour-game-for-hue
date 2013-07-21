@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hue Game</title>
+    <link href="bootstrap-combined.min.css" rel="stylesheet">
+    <link href="huehueheu.css" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <meta name="viewport" content="user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+    <script type='application/javascript' src='fastclick.js'></script>
+   </head>
+	<body>
+	
+		<div class="row-fluid toprow">
+		
+		<div class="span8 topleft">
+	
+	  		<h1 class="dosis">SUPER BULB MEMORY COLOUR GAME</h1>
+	  		
+	  		<h2 class="dosis">A bulb will turn off - just press the colour it was before that happened.</h2>
+	  	
+	  		<h2 id="verdict"></h2>
+	  		
+	  		<div id="reset" style="display:none;" class="pull-right btn btn-warning">Reset Game</div>
+	  	</div>
+	  	<div class="span3 topright pull-right">
+	  		<h2 id="secs">:30</h2>
+	  		<h2 id="score">SCORE: 0</h2>
+	  		<a class="btn btn-info" href="hiscore.php">View Hi Scores</a>
+	  	</div>
+	  	
+	  	</div>
+	  	
+	  		
+	  		<div id="hihold" style="display: none;"><div id="hilead" class="btn btn-large btn-danger dosis">Game Over!</div><a id="hisubmit" class="dosis btn-large btn-info" href="#">Submit Hi Score</a></div>
+	  		
+	  		<div id="start" class="dosis btn btn-large btn-success">Start The Game!</div>
+	  		
+	  		<br/><Br/>
+	  		
+	  		<div class="row-fluid buttonrow">
+		  		<div class="span3 bigbutt" id="pink"></div>
+		  		<div class="span3 bigbutt" id="blue"></div>
+		  		<div class="span3 bigbutt" id="yellow"></div>
+		  		<div class="span3 bigbutt" id="red"></div>
+	  		</div>
+	    
+	    <script>
+	    	// Number of seconds to play for:
+	    	var n = 30;
+	    </script>
+	   
+	   <script src="huehuehue.js"></script>
+	   <script>
+	   $(function() {
+	       FastClick.attach(document.body);
+	   });
+	   $(document).bind('touchmove', false);
+	   </script>
+	   
+	</body>
+</html>
+
+
