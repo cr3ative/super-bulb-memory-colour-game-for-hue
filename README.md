@@ -1,6 +1,8 @@
 super-bulb-memory-colour-game-for-hue
 =====================================
 
+Created as a fun project during the 24 hour hacked.io hackathon.
+
 A game for Hue. A bulb will turn off - just press the colour it was before that happened. Sounds easy, huh?
 
 Run it on the same network as your hue bridge, then go ahead and set it up using the web interface.
